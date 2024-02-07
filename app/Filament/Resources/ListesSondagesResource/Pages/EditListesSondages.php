@@ -10,10 +10,10 @@ class EditListesSondages extends EditRecord
 {
     protected static string $resource = ListesSondagesResource::class;
 
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\DeleteAction::make(),
-        ];
-    }
+    // protected function getHeaderActions(): array
+    // {
+    //     return [
+    //         Actions\DeleteAction::make(),
+    //     ];
+    // }
 }

@@ -11,10 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('listes_sondages', function (Blueprint $table) {
+        Schema::create('sondage', function (Blueprint $table) {
             $table->id();
-           
-            $table->rememberToken();
+            $table->string('nom');
+            $table->string('prenom');
+            $table->string('email')->unique();
+            $table->string('telephone');
+            $table->string('Veuillee choisir votre candidat !!');
+            $table->string('Pourquoi avez vous choisi ce Candidat ?');
             $table->timestamps();
         });
     }
@@ -24,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('listes_sondages');
+        Schema::dropIfExists('sondage');
     }
 };

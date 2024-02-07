@@ -10,10 +10,10 @@ class ListListesSondages extends ListRecords
 {
     protected static string $resource = ListesSondagesResource::class;
 
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\CreateAction::make(),
-        ];
-    }
+   // protected function getHeaderActions(): array
+    // {
+    //     return [
+    //         Actions\CreateAction::make(),
+    //     ];
+    // }
 }
